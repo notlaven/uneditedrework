@@ -32,6 +32,13 @@ const timelineItems: TimelineItem[] = [
   },
   {
     id: "2",
+    date: "March 2024 - October 2024",
+    title: "Bitless hosting dashboard",
+    description: "Built a hosting dashboard for user management and connecting data",
+    story: "This was my first project!"
+  },
+  {
+    id: "3",
     date: "2015 - 2019",
     title: "Learning Python 3 and Web 3 technologies",
     description: "Building small applications with Python and HTML, CSS and JS",
@@ -164,7 +171,7 @@ interface StoryCardProps {
 
 function StoryCard({ selectedItem, onToggle, isVisible }: StoryCardProps) {
   return (
-    <Card className="h-full bg-card/50 backdrop-blur-sm">
+    <Card className="h-full bg-card/80 backdrop-blur-sm">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-2xl text-primary">
           {selectedItem ? selectedItem.title : "My Story"}
@@ -207,7 +214,7 @@ function StoryCard({ selectedItem, onToggle, isVisible }: StoryCardProps) {
               animate={{ opacity: 1 }}
               className="text-center text-muted-foreground"
             >
-              Select a timeline item to view the story
+              Select a item to view the story
             </motion.p>
           )}
         </AnimatePresence>

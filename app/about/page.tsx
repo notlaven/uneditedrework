@@ -16,7 +16,7 @@ export default function aboutPage() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
       <div className="col-span-1 md:col-span-2">
-        <h1 className="text-4xl font-bold mb-4">About me</h1>
+        <h1 className={`text-2xl font-bold ${beVietnamPro.className} mb-2`}>About me</h1>
         <p className="text-lg">
           I&apos;m Charlie, a passionate freelance web and application developer
           based in Denmark. At just 15 years old, I&apos;ve immersed myself in the
@@ -42,8 +42,8 @@ export default function aboutPage() {
           challenges and opportunities in the field of software development.
         </p>
       </div>
-      <Card className="shadow-lg w-full md:w-auto p-4 bg-black text-white">
-        <h2 className={`text-2xl font-bold ${beVietnamPro.className}`}>
+      <Card className="shadow-lg w-full md:w-auto p-4 bg-primary/80 text-white">
+        <h2 className={`text-2xl font-bold ${beVietnamPro.className} mb-2`}>
           Charlie VA
         </h2>
         <div className={`text-md ${beVietnamPro.className}`}>
@@ -54,7 +54,7 @@ export default function aboutPage() {
           <br />
           <Divider />
           Skills:
-          <ul className="ml-5 list-disc space-y-1">
+          <ul className="ml-1 list-none space-y-1">
             <li>
               <HoverCard>
                 <HoverCardTrigger>React</HoverCardTrigger>
